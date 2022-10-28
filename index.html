@@ -14,65 +14,78 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <div class="container"> 
-        <a href="" class="logo"><span class="web">Web</span>Studio</a> 
-            <ul class="header-ul">
-            <nav class="header-nav">
-                <li class="active"><a href="./index.html">Студія</a></li>
-                <li class="port-link"><a href="./portfolio.html">Портфоліо</a></li>
-                <li class="cont-link"><a href="">Контакти</a></li>
-            </nav>
-            <div class="header-div">
-                <li class="post-link"><a href="">info@devstudio.com</a></li>
-                <li class="num-link"><a href="">+38 096 111 11 11</a></li>
+            <div class="header-container">
+            	<a href="" class="logo"><span class="web">Web</span>Studio</a> 
+            		<nav class="header-nav">
+                	<ul class="header-nav__list">
+						<li class="header-nav__li"><a class="header-nav__item active" href="./index.html">Студія</a></li>
+                		<li class="header-nav__li"><a class="header-nav__item" href="./portfolio.html">Портфоліо</a></li>
+                		<li class="header-nav__li"><a class="header-nav__item" href="">Контакти</a></li>
+					</ul>
+            		</nav>
+            		<ul class="header-contacts">
+                	    <li class="header-contacts__li first-contact"><a class="header-contacts__item" href="#">info@devstudio.com</a></li>
+                	    <li class="header-contacts__li second-contact"><a class="header-contacts__item" href="#">+38 096 111 11 11</a></li>
+                    </ul>
             </div>
-            </ul>
         </div>
     </header>
+
     <main>
 
-    <section class="hero">
+    <section class="section">
+    <div class="hero-div">
         <div class="hero-block">
-					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-					<button class="hero-button" type="button">Замовити послугу</button>
-				</div>
+				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+				<button class="hero-button" type="button">Замовити послугу</button>
+		</div>
+    </div>
     </section>
 
-    <section class="benefits">
+    <section class="section">
+    <div class="benefits">
         <div class="container">
-					<ul class="benefits-list">
-            <li class="benefits-list__li">
-			    <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+		<ul class="benefits-list">
+            <li class="benefits-li">
+		        <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="benefits-description">Ідейні міркування, і навіть початок<br> повсякденної роботи з формування<br> позиції.</p>
             </li>
-            <li class="benefits-list__li">
+            <li class="benefits-li">
 				<h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
                 <p class="benefits-description">Завдання організації, особливо рамки<br> і місце навчання кадрів тягне у себе.</p>
             </li>
-            <li class="benefits-list__li">
+            <li class="benefits-li">
 				<h3 class="benefits-title">ПЛАНУВАННЯ</h3>
                 <p class="benefits-description">Так само консультація з широким <br> активом значною мірою зумовлює.</p>
             </li>
-            <li class="benefits-list__li">
+            <li class="benefits-li">
 				<h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
 				<p class="benefits-description">Значимість цих проблем настільки<br> очевидна, що реалізація планових<br> завдань.</p>
             </li>
         </ul>
-				</div>
+		</div>
+    </div>
     </section>
 
-    <section class="work">
+    <section class="section">
+    <div class="container">
+        <div class="work-container">
         <h2 class="work-title">Чим ми займаємося</h2>
         <div class="work-div">
-            <img class="tablet" src="./img/box 1.jpg" width="370" alt="Планшет">
-            <img class="laptop" src="./img/box 2.jpg" width="370" alt="Ноутбук">
-            <img class="g-tablet" src="./img/box 3.jpg" width="370" alt="Графічний планшет">
+            <img class="work-img" src="./img/box 1.jpg" width="370" alt="Планшет">
+            <img class="work-img" src="./img/box 2.jpg" width="370" alt="Ноутбук">
+            <img class="work-img" src="./img/box 3.jpg" width="370" alt="Графічний планшет">
         </div>
+        </div>
+    </div>
     </section>
 
-    <section class="team-section">
-    <h2 class="our-team">Наша команда</h2>
+    <section class="section">
+    <div class="team-div">
+        <div class="container">
+        <h2 class="our-team">Наша команда</h2>
             <ul class="team-list">
             <div class="team-border">
                 <li class="team-list__li">
@@ -99,8 +112,8 @@
                 <div class="team-photo">
                     <img class="photo-three" src="./img/img (2).jpg" width="270" alt="Микола">
                     <div class="team-info">
-                        	<h3 class="team-name">Микола Тарасов</h3>
-                        	<span class="team-proffesion">Marketing</span> 
+                        <h3 class="team-name">Микола Тарасов</h3>
+                        <span class="team-proffesion">Marketing</span> 
                     </div>
                 </div>
             </li>
@@ -115,17 +128,23 @@
             </div>
             </li>
         </ul>
+        </div>
+    </div>
     </section> 
 
     </main>
 
     <footer class="footer">
+    <div class="container">
+        <div class="footer-div">
         <a href="" class="logo-two"><span class="web">Web</span><span class="studio-footer">Studio</span></a> 
-            <ul>
+            <ul class="footer-ul">
                 <li class="adress"> м. Київ, пр-т Лесі Українки, 26</li>
                 <li class="post">info@devstudio.com</li>
                 <li class="num">+38 096 111 11 11</li>
             </ul>
+        </div>
+    </div>
     </footer>
 </body>
 </html>
