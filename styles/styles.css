@@ -25,6 +25,11 @@ body {
   margin: 0 auto;
 }
 
+.portfolio-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .section {
   margin: 0;
 }
@@ -46,6 +51,10 @@ body {
 }
 
 /*----------------header-------------*/
+
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 
 .logo {
   font-weight: 700;
@@ -78,9 +87,6 @@ body {
   margin-right: 50px;
 }
 
-.header-nav__item {
-}
-
 .active {
   color: rgba(33, 150, 243, 1);
 }
@@ -92,15 +98,26 @@ body {
 
 .first-contact {
   margin-right: 50px;
+  color: rgba(33, 150, 243, 1);
+}
+
+.second-contact {
+  color: #757575;
 }
 
 /*------------------villain--------------*/
+
+.portfolio-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .villain-button {
   text-align: center;
   margin-left: 8px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .blue-button {
@@ -108,9 +125,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.63;
   border: 0px;
   padding: 6px 25px;
   letter-spacing: 0.03em;
@@ -122,9 +139,9 @@ body {
   background-color: #f5f4fa;
   margin-left: 8px;
   border: 0px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.63;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
@@ -136,6 +153,7 @@ body {
 .posters-container {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .posters-container:nth-child(3n){
@@ -144,8 +162,8 @@ body {
 
 .posters-li {
   padding-bottom: 30px;
+  margin: 0;
   margin-right: 30px;
-  margin: 0 auto;
 }
 
 .posters-div {
@@ -167,12 +185,14 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .porters-specialisation {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -181,11 +201,11 @@ body {
 
 .hero-div {
   background: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-block {
   margin: 0 auto;
-  padding: 200px 0;
   max-width: 696px;
 }
 
@@ -198,6 +218,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin: 0;
 }
 
 .hero-button {
@@ -210,7 +231,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.9;
   border: 0px;
   letter-spacing: 0.06em;
 }
@@ -220,7 +241,7 @@ body {
 /*---------------benefits-------------*/
 
 .benefits {
-  padding-bottom: 118px;
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 
@@ -236,6 +257,10 @@ body {
   align-items: stretch;
 }
 
+.benefits-li {
+  width: 270px;
+}
+
 .benefits-li:not(:last-child) {
   margin-right: 30px;
 }
@@ -243,12 +268,19 @@ body {
 .benefits-description {
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
 }
 
 /*---------------benefits--------------*/
 
 /*---------------work----------------*/
+
+.work-container {
+  padding-bottom: 94px;
+}
 
 .work-div {
   margin: 0 auto;
@@ -263,9 +295,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
-.work-img{
+.work-img:not(:last-child){
   margin-right: 32px;
 }
 
@@ -273,8 +307,9 @@ body {
 
 /*-------------our-team------------*/
 
-.team-div {
+.team-section {
   background: #f5f4fa;
+  padding-top: 94px;
 }
 
 .our-team {
@@ -286,7 +321,8 @@ body {
   color: #212121;
   border: 2px;
   border-color: gray;
-  padding-top: 94px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -318,7 +354,8 @@ body {
 }
 
 .team-info {
-  padding: 30px 61px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
   font-size: 16px;
   line-height: 1.2;
@@ -344,6 +381,8 @@ body {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-two {
@@ -356,6 +395,7 @@ body {
 
 .footer-ul {
   padding-left: 0;
+  margin-top: 20px;
 }
 
 .adress {
@@ -364,6 +404,7 @@ body {
   line-height: 1.72;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 
 .post {
@@ -372,6 +413,7 @@ body {
   line-height: 1.72;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .num {
@@ -380,9 +422,4 @@ body {
   line-height: 1.72;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-div {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
