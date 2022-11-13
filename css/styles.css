@@ -30,6 +30,7 @@ body {
 
 .header-container {
     display: flex;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -72,7 +73,11 @@ body {
     margin-right: 50px;
 }
 
-.header-list__li:hover { 
+.header-list__link:focus { 
+    color: #2196F3;
+}
+
+.header-list__link:hover { 
     color: #2196F3;
 }
 
@@ -89,6 +94,7 @@ body {
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    color: #757575;
 }
 
 .header-contacts__li button {
@@ -99,13 +105,18 @@ body {
     margin-right: 50px;
 }
 
-.header-contacts__li {
-    color: #757575;
+.header-contacts__link {
+    fill: #757575;
 }
 
-.header-contacts__li:hover{
-    fill: #2196F3;
+.header-contacts__link:focus {
     color: #2196F3;
+    fill: #2196F3;
+}
+
+.header-contacts__link:hover {
+    color:#2196F3;
+    fill: #2196F3;
 }
 
 .header-contacts__button {
@@ -117,6 +128,7 @@ body {
 .header-contacts__svg {
     background-color: #ffffff;
     margin-right: 10px;
+    stroke: #757575;
 }
 
 .envelope {
@@ -144,7 +156,6 @@ body {
 .button-list__li:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 3px;
-    background-color: #F5F4FA;
 }
 
 .button-list__li:not(:last-child) {
@@ -162,6 +173,16 @@ body {
     border: 0px;
     padding: 6px 25px;
     letter-spacing: 0.03em;
+}
+
+.white:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+.white:focus {
+    background-color: #2196F3;
+    color: white;
 }
 
 .white {
@@ -301,7 +322,7 @@ body {
     
 }
 
-.benefits-button {
+.benefits-div {
     padding: 25px 100px;
     border: none;
     border-radius: 3px;
@@ -312,7 +333,6 @@ body {
     display: flex;
     width: 70px;
     height: 70px;
-
 }
 
 .benefits-title {
@@ -323,6 +343,7 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .benefits-paragraph{
@@ -348,13 +369,17 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
 }
 
 .work-list {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
+}
+
+.work-list__li:not(:last-child) {
+    margin-right: 30px;
 }
 
 /*------------work---------------*/
@@ -363,7 +388,7 @@ body {
 
 .our-team {
     padding: 94px 0;
-    background-color: #F5F4FA;
+    background-color: #F5F4FA
 }
 
 .team-title {
@@ -388,8 +413,10 @@ body {
 }
 
 .team-description {
-    padding: 30px 61px;
+    padding: 30px 0;
     text-align: center;
+    background-color: #FFFFFF;
+
 }
 
 .team-name {
@@ -397,6 +424,7 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-top: 0;
 }
 
 .team-profession {
@@ -411,7 +439,8 @@ body {
     display: flex;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 30px;
+    padding-top: 16px;
+    background-color: #FFFFFF;
 }
 
 .team-social__button {
@@ -421,9 +450,14 @@ body {
     width: 44px;
     height: 44px;
     padding: 0;
+    background-color: #fff;
 }
 
 .team-social__button:hover {
+    background-color: #2196F3;
+}
+
+.team-social__button:focus {
     background-color: #2196F3;
 }
 
@@ -457,6 +491,8 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .clients-list {
@@ -483,14 +519,22 @@ body {
     border-color: #2196F3;
 }
 
+.clients-button:focus {
+    border-color: #2196F3;
+}
+
 .clients-list__svg {
     width: 106px;
     height: 60px;
-    fill: #757575;
+    fill: #AFB1B8;
     padding: 16px 32px;
 }
 
 .clients-list__svg:hover {
+    fill: #2196F3;
+}
+
+.clients-list__svg:focus {
     fill: #2196F3;
 }
 
@@ -569,6 +613,7 @@ body {
     padding: 0;
     width: 44px;
     height: 44px;
+    background-color: #464755;
 }
 
 .footer-social__li:not(:last-child) {
@@ -578,14 +623,14 @@ body {
 .footer-social__svg {
     width: 20px;
     height: 20px;
-    fill: #757575;
+    fill: #fff;
     padding: 12px 12px;
 }
 
-.footer-social__svg:hover {
-    fill: #FFFFFF
+.footer-social__button:hover {
+    background-color: #2196F3;
 }
 
-.footer-social__button:hover {
+.footer-social__button:focus {
     background-color: #2196F3;
 }
