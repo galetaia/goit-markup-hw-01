@@ -23,7 +23,6 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 /*--------------header-----------*/
@@ -323,7 +322,6 @@ body {
 }
 
 .benefits-div {
-    padding: 25px 100px;
     border: none;
     border-radius: 3px;
     background-color: #F5F4FA;
@@ -333,6 +331,8 @@ body {
     display: flex;
     width: 70px;
     height: 70px;
+    margin: auto;
+    padding: 25px 0;
 }
 
 .benefits-title {
@@ -343,7 +343,7 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .benefits-paragraph{
@@ -443,21 +443,21 @@ body {
     background-color: #FFFFFF;
 }
 
-.team-social__button {
+.team-social__link {
+    display: block;
     border: none;
-    border-radius: 40px;
+    border-radius: 50%;
     padding: 0;
     width: 44px;
     height: 44px;
-    padding: 0;
     background-color: #fff;
 }
 
-.team-social__button:hover {
+.team-social__link:hover {
     background-color: #2196F3;
 }
 
-.team-social__button:focus {
+.team-social__link:focus {
     background-color: #2196F3;
 }
 
@@ -506,20 +506,18 @@ body {
     margin-right: 30px;
 }
 
-.clients-button {
+.clients-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     background-color: #fff;
     border: 1px solid #AFB1B8;
     border-radius: 5px;
-    padding: 0;
 }
 
-.clients-button:hover {
-    border-color: #2196F3;
-}
-
-.clients-button:focus {
+.clients-list__link:hover {
     border-color: #2196F3;
 }
 
@@ -532,10 +530,12 @@ body {
 
 .clients-list__svg:hover {
     fill: #2196F3;
+    border: none;
 }
 
 .clients-list__svg:focus {
     fill: #2196F3;
+    border: none;
 }
 
 /*---------------footer------------*/
@@ -609,6 +609,7 @@ body {
 
 .footer-social__button {
     border: none;
+    display: block;
     border-radius: 30px;
     padding: 0;
     width: 44px;
