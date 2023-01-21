@@ -452,30 +452,29 @@ body {
     width: 44px;
     height: 44px;
     background-color: #fff;
+		fill: #949496;
 }
 
 .team-social__link:hover {
     background-color: #2196F3;
+		fill: #F5F4FA;
 }
 
 .team-social__link:focus {
     background-color: #2196F3;
-}
-
-.team-social__svg:hover {
-    fill: #F5F4FA;
+		fill: #F5F4FA;
 }
 
 .team-social__li:not(:last-child) {
     margin-right: 10px;
 }
 
-.team-social__svg {
+/* .team-social__svg {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
     padding: 12px 12px;
-}
+} */
 
 /*--------------our-team------------*/
 
