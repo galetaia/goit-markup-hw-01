@@ -310,7 +310,6 @@ body {
 
 /*--------------benefits------------*/
 
-
 .benefits-list {
     padding-left: 0;
     display: flex;
@@ -506,7 +505,7 @@ body {
     margin-right: 30px;
 }
 
-.clients-list__link {
+.clients-list__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -517,7 +516,11 @@ body {
     border-radius: 5px;
 }
 
-.clients-list__link:hover {
+.clients-list__button:hover {
+    border-color: #2196F3;
+}
+
+.clients-list__button:focus {
     border-color: #2196F3;
 }
 
